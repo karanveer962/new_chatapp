@@ -13,7 +13,7 @@ SECRET_KEY = 'q484cut7o3)27rt(1qfke15g+dhy-i*cwj194ryfjxk3g)+2gu'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-
+# AUTH_USER_MODEL = "fundooapp.user"
 
 ALLOWED_HOSTS = ['*']
 
@@ -101,14 +101,14 @@ CHANNEL_LAYERS = {
 # Database
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'chatapp',
-        'USER': 'chatapp',
-        'PASSWORD': 'J.YqwX83zz',
-        'HOST': '10.0.0.149',
-        'PORT': '3306',
-    }
+'default': {
+'ENGINE': 'django.db.backends.mysql',
+'NAME': 'chatapp',
+'USER': 'chatapp',
+'PASSWORD': 'J.YqwX83zz',
+'HOST': '10.0.0.75',
+'PORT': '3306',
+}
 }
 #sagar kadam
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
@@ -149,6 +149,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
-
-
+# LOGIN_REDIRECT_URL = 'sign_in'
+# LOGOUT_REDIRECT_URL = 'logout'
 CSRF_COOKIE_SECURE = False
