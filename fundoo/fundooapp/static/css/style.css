@@ -1,7 +1,6 @@
 @media(max-width:425px)
 {body{
     background : url("/static/web3.jpg");
-    background-size: 1200px;
     min-height: 100%;
     background-position: center;
     background-size: cover;
